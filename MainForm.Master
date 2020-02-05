@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainForm.Master.cs" Inherits="BusBookingSystem.MainForm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Buz-e</title>
+    <style>
+        Form{
+            background-color: darkturquoise;
+            position: center;
+            border: 2px solid #4CAF50;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 28px; width: 1483px">
+    <form id="form1" runat="server">
+        <div>
+            <div id="title" >
+                Buz-e
+                <span style="margin-left:1150px" class="Form">
+                    <asp:Button ID="Home" runat="server" Text="Home" OnClick="Home_Click" BackColor="#00ff00" BorderWidth="0"/>
+                    &nbsp;
+                    <asp:Button ID="Login" runat="server" Text="Login" BackColor="#00ff00" BorderWidth="0" OnClick="Login_Click"/>
+                    &nbsp;
+                    <asp:Button ID="Register" runat="server" Text="Register" BackColor="#00ff00" BorderWidth="0" OnClick="Register_Click" style="height: 22px"/>
+                    &nbsp;
+                    <asp:Button ID="Book" runat="server" Text="BookBus" BackColor="#00ff00" BorderWidth="0" OnClick="Book_Click"/>
+                </span>
+            </div>
+            <asp:ContentPlaceHolder ID="mainForm" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
